@@ -53,3 +53,58 @@ int main() {
     // Cálculo da densidade
     densidade1 = (area1 > 0) ? (populacao1 / area1) : 0;
     densidade2 = (area2 > 0) ? (populacao2 / area2) : 0;
+
+    // Escolha do atributo para comparar
+    printf("\nAtributos disponíveis: populacao | area | pib | pontos | densidade\n");
+    printf("Digite o atributo para comparar: ");
+    scanf(" %[^\n]", atributo);
+
+    // Comparação de Cartas
+    printf("\n--- Resultado da Comparação ---\n");
+
+    if (strcmp(atributo, "populacao") == 0) {
+        if (populacao1 > populacao2)
+            printf("Cidade vencedora: %s (maior população)\n", nome1);
+        else if (populacao2 > populacao1)
+            printf("Cidade vencedora: %s (maior população)\n", nome2);
+        else
+            printf("Empate na população!\n");
+    }
+    else if (strcmp(atributo, "area") == 0) {
+        if (area1 > area2)
+            printf("Cidade vencedora: %s (maior área)\n", nome1);
+        else if (area2 > area1)
+            printf("Cidade vencedora: %s (maior área)\n", nome2);
+        else
+            printf("Empate na área!\n");
+    }
+    else if (strcmp(atributo, "pib") == 0) {
+        if (pib1 > pib2)
+            printf("Cidade vencedora: %s (maior PIB)\n", nome1);
+        else if (pib2 > pib1)
+            printf("Cidade vencedora: %s (maior PIB)\n", nome2);
+        else
+            printf("Empate no PIB!\n");
+    }
+    else if (strcmp(atributo, "pontos") == 0) {
+        if (pontos1 > pontos2)
+            printf("Cidade vencedora: %s (mais pontos turísticos)\n", nome1);
+        else if (pontos2 > pontos1)
+            printf("Cidade vencedora: %s (mais pontos turísticos)\n", nome2);
+        else
+            printf("Empate nos pontos turísticos!\n");
+    }
+    else if (strcmp(atributo, "densidade") == 0) {
+        if (densidade1 < densidade2)
+            printf("Cidade vencedora: %s (menor densidade populacional)\n", nome1);
+        else if (densidade2 < densidade1)
+            printf("Cidade vencedora: %s (menor densidade populacional)\n", nome2);
+        else
+            printf("Empate na densidade!\n");
+    }
+    else {
+        printf("Atributo inválido!\n");
+    }
+
+    return 0;
+}
