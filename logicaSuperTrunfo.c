@@ -15,3 +15,37 @@ int main() {
     int pontos1, pontos2;
     float densidade1, densidade2;
     char atributo[30];
+
+// Cadastro da Carta 1
+    printf("Cadastro da Carta 1:\n");
+    printf("Código: ");
+    scanf(" %[^\n]", codigo1);
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]", nome1);
+    printf("Estado: ");
+    scanf(" %[^\n]", estado1);
+    printf("População: ");
+    scanf("%d", &populacao1);
+    printf("Área (km²): ");
+    scanf("%f", &area1);
+    printf("PIB (em bilhões): ");
+    scanf("%f", &pib1);
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos1);
+
+    // Cadastro da Carta 2
+    printf("\nCadastro da Carta 2:\n");
+    printf("Código: ");
+    scanf(" %[^\n]", codigo2);
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]", nome2);
+    printf("Estado: ");
+    scanf(" %[^\n]", estado2);
+    printf("População: ");
+    scanf("%d", &populacao2);
+    printf("Área (km²): ");
+    scanf("%f", &area2);
+    printf("PIB (em bilhões): ");
+    scanf("%f", &pib2);
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &pontos2);
