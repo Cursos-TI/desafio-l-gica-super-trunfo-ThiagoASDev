@@ -49,3 +49,7 @@ int main() {
     scanf("%f", &pib2);
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontos2);
+
+    // Cálculo da densidade
+    densidade1 = (area1 > 0) ? (populacao1 / area1) : 0;
+    densidade2 = (area2 > 0) ? (populacao2 / area2) : 0;
